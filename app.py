@@ -29,7 +29,7 @@ CONTENT = {
         'skills_subtitle': 'Technologies and tools I work with',
         'skills_coming_soon': 'Skills Overview Coming Soon',
         'skills_description': "I'm preparing a comprehensive overview of my technical skills. Check back soon!",
-        'footer_text': 'All rights reserved.',
+
         'dark_mode': 'Dark Mode',
         'light_mode': 'Light Mode',
         'my_projects': 'My Projects',
@@ -80,7 +80,7 @@ CONTENT = {
         'skills_subtitle': 'Technologien und Tools, mit denen ich arbeite',
         'skills_coming_soon': 'Fähigkeitsübersicht kommt bald',
         'skills_description': 'Ich bereite eine umfassende Übersicht meiner technischen Fähigkeiten vor. Schauen Sie bald wieder vorbei!',
-        'footer_text': 'Alle Rechte vorbehalten.',
+
         'dark_mode': 'Dunkler Modus',
         'light_mode': 'Heller Modus',
         'my_projects': 'Meine Projekte',
