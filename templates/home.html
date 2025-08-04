@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Munish Khan{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <!-- Main Heading -->
+                <h1 class="hero-title mb-5">Munish Khan</h1>
+                
+                <!-- Profile Image -->
+                <div class="profile-image-container mb-5">
+                    <div class="profile-image">
+                        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Munish Khan" class="profile-photo">
+                    </div>
+                </div>
+                
+                <!-- Social Media Icons -->
+                <div class="social-icons mb-5">
+                    <a href="https://github.com/krakenkhan" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/khanmunish" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                
+                <!-- Introduction Paragraph -->
+                <div class="intro-text mb-5">
+                    <p class="lead">
+                        {{ content.intro_text }}
+                    </p>
+                </div>
+                
+                <!-- Navigation Buttons -->
+                <div class="navigation-buttons">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-md-6 col-sm-6">
+                            <a href="{{ url_for('projects') }}" class="btn btn-outline-primary btn-lg w-100 nav-btn d-flex align-items-center justify-content-center">
+                                <i class="fas fa-code me-2"></i>{{ content.nav_projects }}
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <a href="{{ url_for('education') }}" class="btn btn-outline-primary btn-lg w-100 nav-btn d-flex align-items-center justify-content-center">
+                                <i class="fas fa-graduation-cap me-2"></i>{{ content.nav_education }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
