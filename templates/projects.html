@@ -1,122 +1,142 @@
-{% extends "base.html" %}
-
-{% block title %}Projects - Munish Khan{% endblock %}
-
+{% extends "base.html" %} {% block title %}Projects - Munish Khan{% endblock %}
 {% block content %}
 <div class="page-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="page-header text-center mb-5">
-                    <h1 class="page-title">{{ content.my_projects }}</h1>
-                    <p class="page-subtitle text-muted">{{ content.projects_subtitle }}</p>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="page-header text-center mb-5">
+          <h1 class="page-title">{{ content.my_projects }}</h1>
+          <p class="page-subtitle text-muted">
+            {{ content.projects_subtitle }}
+          </p>
         </div>
-        
-        <!-- Game Development Section -->
-        <div class="row mb-5">
-            <div class="col-12">
-                <div class="category-section mb-5">
-                    <h2 class="category-title text-center mb-4">
-                        <i class="fas fa-gamepad me-3"></i>{{ content.game_development }}
-                    </h2>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="project-card">
-                                <div class="project-content">
-                                    <h4 class="project-title">Unity Games Collection</h4>
-                                    <p class="project-description">{{ content.unity_games_desc }}</p>
-                                    <div class="project-actions">
-                                        <a href="https://play.unity.com/en/user/955c386c-6eeb-45fd-8b8f-a027cdcef97e" 
-                                           target="_blank" 
-                                           class="btn btn-primary project-btn">
-                                            <i class="fas fa-play me-2"></i>{{ content.view_project }}
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Web Development Section -->
-        <div class="row mb-5">
-            <div class="col-12">
-                <div class="category-section mb-5">
-                    <h2 class="category-title text-center mb-4">
-                        <i class="fas fa-globe me-3"></i>{{ content.web_development }}
-                    </h2>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="project-card">
-                                <div class="project-content">
-                                    <h4 class="project-title">Immersive Reader (VibeReader)</h4>
-                                    <p class="project-description">{{ content.vibereader_desc }}</p>
-                                    <div class="project-actions">
-                                        <a href="https://vibereader.onrender.com" 
-                                           target="_blank" 
-                                           class="btn btn-primary project-btn me-3 mb-2">
-                                            <i class="fas fa-external-link-alt me-2"></i>{{ content.view_live_site }}
-                                        </a>
-                                        <a href="https://github.com/krakenkhan/vibereader" 
-                                           target="_blank" 
-                                           class="btn btn-outline-primary project-btn mb-2">
-                                            <i class="fab fa-github me-2"></i>{{ content.view_on_github }}
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Data Science Section -->
-        <div class="row mb-5">
-            <div class="col-12">
-                <div class="category-section">
-                    <h2 class="category-title text-center mb-4">
-                        <i class="fas fa-chart-bar me-3"></i>{{ content.data_science }}
-                    </h2>
-                    <div class="row">
-                        <div class="col-lg-6 mb-4">
-                            <div class="project-card h-100">
-                                <div class="project-content">
-                                    <h4 class="project-title">Data Visualisation</h4>
-                                    <p class="project-description">{{ content.data_viz_desc }}</p>
-                                    <div class="project-actions">
-                                        <a href="https://github.com/krakenkhan/Data-Visualisation" 
-                                           target="_blank" 
-                                           class="btn btn-primary project-btn">
-                                            <i class="fab fa-github me-2"></i>{{ content.view_on_github }}
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="project-card h-100">
-                                <div class="project-content">
-                                    <h4 class="project-title">Data-Driven Strategic Management</h4>
-                                    <p class="project-description">{{ content.strategic_mgmt_desc }}</p>
-                                    <div class="project-actions">
-                                        <a href="https://github.com/krakenkhan/Data-Driven-Strategic-Management" 
-                                           target="_blank" 
-                                           class="btn btn-primary project-btn">
-                                            <i class="fab fa-github me-2"></i>{{ content.view_on_github }}
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+
+    <!-- Web Development Section -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="category-section mb-5">
+          <h2 class="category-title text-center mb-4">
+            <i class="fas fa-globe me-3"></i>{{ content.web_development }}
+          </h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="project-card">
+                <div class="project-content">
+                  <h4 class="project-title">Immersive Reader (VibeReader)</h4>
+                  <p class="project-description">
+                    {{ content.vibereader_desc }}
+                  </p>
+                  <div class="project-actions">
+                    <a
+                      href="https://vibereader.onrender.com"
+                      target="_blank"
+                      class="btn btn-primary project-btn me-3 mb-2"
+                    >
+                      <i class="fas fa-external-link-alt me-2"></i>{{
+                      content.view_live_site }}
+                    </a>
+                    <a
+                      href="https://github.com/krakenkhan/vibereader"
+                      target="_blank"
+                      class="btn btn-outline-primary project-btn mb-2"
+                    >
+                      <i class="fab fa-github me-2"></i>{{
+                      content.view_on_github }}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Science Section -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="category-section">
+          <h2 class="category-title text-center mb-4">
+            <i class="fas fa-chart-bar me-3"></i>{{ content.data_science }}
+          </h2>
+          <div class="row">
+            <div class="col-lg-6 mb-4">
+              <div class="project-card h-100">
+                <div class="project-content">
+                  <h4 class="project-title">Data Visualisation</h4>
+                  <p class="project-description">{{ content.data_viz_desc }}</p>
+                  <div class="project-actions">
+                    <a
+                      href="https://github.com/krakenkhan/Data-Visualisation"
+                      target="_blank"
+                      class="btn btn-primary project-btn"
+                    >
+                      <i class="fab fa-github me-2"></i>{{
+                      content.view_on_github }}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <div class="project-card h-100">
+                <div class="project-content">
+                  <h4 class="project-title">
+                    Data-Driven Strategic Management
+                  </h4>
+                  <p class="project-description">
+                    {{ content.strategic_mgmt_desc }}
+                  </p>
+                  <div class="project-actions">
+                    <a
+                      href="https://github.com/krakenkhan/Data-Driven-Strategic-Management"
+                      target="_blank"
+                      class="btn btn-primary project-btn"
+                    >
+                      <i class="fab fa-github me-2"></i>{{
+                      content.view_on_github }}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- Game Development Section -->
+<div class="row mb-5">
+  <div class="col-12">
+    <div class="category-section mb-5">
+      <h2 class="category-title text-center mb-4">
+        <i class="fas fa-gamepad me-3"></i>{{ content.game_development }}
+      </h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="project-card">
+            <div class="project-content">
+              <h4 class="project-title">Unity Games Collection</h4>
+              <p class="project-description">{{ content.unity_games_desc }}</p>
+              <div class="project-actions">
+                <a
+                  href="https://play.unity.com/en/user/955c386c-6eeb-45fd-8b8f-a027cdcef97e"
+                  target="_blank"
+                  class="btn btn-primary project-btn"
+                >
+                  <i class="fas fa-play me-2"></i>{{ content.view_project }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
